@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="formStyle.css" />
+  </head>
+  <body>
+    <header class="header">
+      <p><u>Student Registration Form Using Table in HTML</u></p>
+    </header>
+    <main class="main">
+      <form action="">
+        <table>
+          <tr>
+            <td>
+              <label for="fname">First Name</label>
+            </td>
+            <td>
+              <input
+                type="text"
+                id="fname"
+                placeholder="Ghanendra"
+                maxlength="50"
+              />
+            </td>
+            <td>&#40;Max 50 Characters Allowed&#41;</td>
+          </tr>
+          <tr>
+            <td>
+              <label for="lname">Last Name</label>
+            </td>
+            <td>
+              <input
+                type="text"
+                id="lname"
+                placeholder="Yadav"
+                maxlength="50"
+              />
+            </td>
+            <td>&#40;Max 50 Characters Allowed&#41;</td>
+          </tr>
+          <tr>
+            <td>
+              <label for="email">Email ID</label>
+            </td>
+            <td>
+              <input
+                type="email"
+                id="email"
+                placeholder="yghanendra@gmail.com"
+              />
+            </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>
+              <label for="phone">Mobile Number</label>
+            </td>
+            <td>
+              <input
+                type="tel"
+                id="phone"
+                placeholder="7842xxxxxx"
+                maxlength="10"
+              />
+            </td>
+            <td>&#40;10 Digits Allowed&#41;</td>
+          </tr>
+          <tr>
+            <td>
+              <label for="gender">Gender</label>
+            </td>
+            <td>
+              <input type="radio" name="gender" id="male" value="male" />
+              <label for="male">Male</label>
+              <input type="radio" name="gender" id="female" value="female" />
+              <label for="female">Female</label>
+            </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Date of Birth&#40;DOB&#41;</td>
+            <td>
+              <select name="" id="day">
+                <option value="day">Day</option>
+              </select>
+              <select name="" id="month">
+                <option value="day">Month</option>
+              </select>
+              <select name="" id="year">
+                <option value="day">Year</option>
+              </select>
+            </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Address</td>
+            <td colspan="2">
+              <textarea
+                name="text"
+                id="textarea"
+                cols="30"
+                rows="10"
+              ></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="city">City</label>
+            </td>
+            <td>
+              <input
+                type="text"
+                id="city"
+                placeholder="Bangalor"
+                maxlength="50"
+              />
+            </td>
+            <td>&#40;Max 50 Characters Allowed&#41;</td>
+          </tr>
+          <tr>
+            <td>
+              <label for="pin">Pin Code</label>
+            </td>
+            <td>
+              <input type="text" id="pin" placeholder="560056" maxlength="6" />
+            </td>
+            <td>&#40;Max 6 Numbers Allowed&#41;</td>
+          </tr>
+          <tr>
+            <td>
+              <label for="state">State</label>
+            </td>
+            <td>
+              <input
+                type="text"
+                id="state"
+                placeholder="Karnataka"
+                maxlength="50"
+              />
+            </td>
+            <td>&#40;Max 50 Characters Allowed&#41;</td>
+          </tr>
+          <tr>
+            <td>
+              <label for="country">Country</label>
+            </td>
+            <td>
+              <input type="text" id="country" placeholder="India" />
+            </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Hobbies</td>
+            <td colspan="2">
+              <input type="checkbox" name="" id="drawing" />
+              <label for="drawing">Drawing</label>
+              <input type="checkbox" name="" id="singing" />
+              <label for="singing">Singing</label>
+              <input type="checkbox" name="" id="dansing" />
+              <label for="dansing">Dancing</label>
+              <input type="checkbox" name="" id="sketching" />
+              <label for="sketching">Sketching</label> <br />
+              <input type="checkbox" name="" id="others" />
+              <label for="others">Others</label>
+              <input type="text" placeholder="Ex-teaching" />
+              <span>&#40;Max 50 Characters Allowed&#41;</span>
+            </td>
+          </tr>
+          <tr>
+            <td>Qualifications</td>
+            <td colspan="2">
+              <ul class="list">
+                <li>
+                  <input type="checkbox" id="highSchool" />
+                  <label for="highSchool">High School &#40;10th&#41;</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="higherSchool" />
+                  <label for="higherSchool">Higher School &#40;12th&#41;</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="graduation" />
+                  <label for="graduation">Graduation &#40;Bachelors&#41;</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="postGraduation" />
+                  <label for="postGraduation"
+                    >Post Graduation &#40;Masters&#41;</label
+                  >
+                </li>
+                <li>
+                  <input type="checkbox" id="phd" />
+                  <label for="phd">Phd</label>
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>Courses Applied For</td>
+            <td colspan="2">
+              <ul>
+                <li>
+                  <input type="radio" id="bca" />
+                  <label for="bca"
+                    >BCA &#40;Bachelor of Computer Applications&#41;</label
+                  >
+                </li>
+                <li>
+                  <input type="radio" id="bcom" />
+                  <label for="bcom">B.Com &#40;Bachelor of Commerce&#41;</label>
+                </li>
+                <li>
+                  <input type="radio" id="bsc" />
+                  <label for="bsc">B.Sc &#40;Bachelor of Science&#41;</label>
+                </li>
+                <li>
+                  <input type="radio" id="ba" />
+                  <label for="ba">BA &#40;Bachelor of Arts&#41;</label>
+                </li>
+                <li>
+                  <input type="radio" id="mca" />
+                  <label for="mca"
+                    >MCA &#40;Master of Computer Applications&#41;</label
+                  >
+                </li>
+                <li>
+                  <input type="radio" id="mcom" />
+                  <label for="mcom">M.Com &#40;Master of Commerce&#41;</label>
+                </li>
+                <li>
+                  <input type="radio" id="msc" />
+                  <label for="msc">M.Sc &#40;Master of Science&#41;</label>
+                </li>
+                <li>
+                  <input type="radio" id="ma" />
+                  <label for="ma">MA &#40;Master of Arts&#41;</label>
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tfoot>
+            <tr>
+              <td colspan="3">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+              </td>
+            </tr>
+          </tfoot>
+        </table>
+      </form>
+    </main>
+  </body>
+</html>

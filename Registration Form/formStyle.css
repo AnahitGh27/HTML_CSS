@@ -1,0 +1,35 @@
+body {
+  font-family: sans-serif;
+}
+.header {
+  text-align: center;
+  font-size: 25px;
+  color: #4242a9;
+}
+
+.main {
+  margin: auto;
+  width: 48%;
+  background-color: rgb(243, 238, 247);
+  color: white;
+}
+
+table {
+  border: black 3px dashed;
+  margin: auto;
+  background-color: rgb(165, 86, 244);
+  padding: 4px;
+}
+
+table > tbody > tr {
+  padding: 0px 5px;
+}
+
+table > tfoot {
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
